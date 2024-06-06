@@ -23,10 +23,9 @@ const FourteenthQues = () => {
         </div>
       </div>
       <div>
-        <button>Obtener Resultados</button>
+        <input type="submit" value="Obtener Resultados" />
       </div>
     </form>
   );
 };
 export default FourteenthQues;
-

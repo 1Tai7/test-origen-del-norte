@@ -21,20 +21,20 @@ const App = () => {
     <>
       <section className="container">
         <StartForm />
-        <FirstQues/>
-        <SecondQues/>
-        <ThirdQues/>
-        <FourthQues/>
-        <FifthQues/>
-        <SixthQues/>
-        <SeventhQues/>
-        <EighthQues/>
-        <NinthQues/>
-        <TenthQues/>
-        <EleventhQues/>
-        <TwelfthQues/>
-        <ThirteenthQues/>
-        <FourteenthQues/>
+        <FirstQues />
+        <SecondQues />
+        <ThirdQues />
+        <FourthQues />
+        <FifthQues />
+        <SixthQues />
+        <SeventhQues />
+        <EighthQues />
+        <NinthQues />
+        <TenthQues />
+        <EleventhQues />
+        <TwelfthQues />
+        <ThirteenthQues />
+        <FourteenthQues />
       </section>
     </>
   );
