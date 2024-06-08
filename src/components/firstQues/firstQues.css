@@ -11,6 +11,7 @@ form {
   align-items: center;
   position: relative;
   top: 3rem;
+  margin-bottom: 3rem;
 }
 .title-ques-container img {
   width: 3rem;
@@ -55,20 +56,20 @@ figure div h2 {
 }
 .answer-container {
   display: flex;
+  gap: 1.5rem;
   flex-direction: column;
   align-items: center;
-  justify-content: space-around;
+  padding: 1rem;
   background-color: var(--light-white);
-  height: 50%;
-  width: 90%;
+  height: auto;
+  width: 85%;
   border-radius: 4rem 4rem 0 0;
 }
 .answer-container .line {
   width: 3rem;
   height: 4px;
   background-color: var(--white);
-  position: relative;
-  top: -25px;
+
   border-radius: 10px;
 }
 .btn-container {
