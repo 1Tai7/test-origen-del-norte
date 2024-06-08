@@ -1,0 +1,17 @@
+:root {
+  --white: #ffffff;
+  --light-orange: #fab57e;
+  --orange: #f16832;
+  --wine: #88000c;
+  --brown: #3c1100;
+  --light-olive: #807f6b;
+  --dark-olive: #334a33;
+  --mustard: #d19525;
+  --green: #5a8d26;
+  --light-white: #d9d9d9d7;
+}
+
+* {
+  margin: 0;
+  font-family: "Didact Gothic", sans-serif;
+}

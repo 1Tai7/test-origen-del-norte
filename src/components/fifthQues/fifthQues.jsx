@@ -1,8 +1,8 @@
 /* eslint-disable react-hooks/exhaustive-deps */
 /* eslint-disable no-undef */
-import { useEffect, useState } from "react";
 import "./fifthQues.css";
 import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
 
 const FifthQues = () => {
   const [fattyOption, setFattyOption] = useState("");
