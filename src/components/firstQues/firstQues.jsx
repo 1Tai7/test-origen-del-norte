@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import "./firstQues.css";
+import "./../../ques.css"
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import iconTest from "./../../assets/icon-pelo-test.svg";

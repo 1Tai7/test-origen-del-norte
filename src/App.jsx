@@ -1,5 +1,5 @@
 //import { useState } from 'react'
-import "./App.css";
+import "./ques.css";
 import FifthQues from "./components/fifthQues/fifthQues";
 import FirstQues from "./components/firstQues/firstQues";
 import FourthQues from "./components/fourthQues/fourthQues";
@@ -21,7 +21,6 @@ const App = () => {
         <FifthQues />
         <SixthQues />
         <SeventhQues />
-    
       </section>
     </>
   );
