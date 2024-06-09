@@ -1,44 +1,80 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import "./fourthQues.css";
-import { useEffect, useState } from "react";
+import "./../../ques.css";
 import { useNavigate } from "react-router-dom";
+import { useEffect, useState } from "react";
+import iconTest from "./../../assets/icon-pelo-test.svg";
+import coldWeather from "./../../assets/clima-frio.svg";
+import tropicalWeather from "./../../assets/clima-tropical.svg";
+import desertWeather from "./../../assets/clima-desierto.svg";
+import jungleWeather from "./../../assets/clima-selva.svg";
 
 const FourthQues = () => {
-  const [fourQuesOne, setFourQuesOne] = useState("");
-  const [fourQuesTwo, setFourQuesTwo] = useState("");
+  const [coldOption, setColdOption] = useState("");
+  const [tropicalOption, setTropicalOption] = useState("");
+  const [desertOption, setDesertOption] = useState("");
+  const [jungleOption, setJungleOption] = useState("");
 
   const navigate = useNavigate();
   const handleClick = () => {
     navigate("/fifth-ques");
   };
   useEffect(() => {
-    if (fourQuesOne !== "" && fourQuesTwo !== "") {
+    if (
+      coldOption !== "" &&
+      tropicalOption !== "" &&
+      desertOption !== "" &&
+      jungleOption !== ""
+    ) {
       handleClick();
     }
     return () => {};
-  }, [fourQuesOne, fourQuesTwo]);
+  }, [coldOption, tropicalOption, desertOption, jungleOption]);
 
   return (
-    <form>
-      <div>
-        <h2>¿Te has decolocado el cabello?</h2>
+    <form id="form-one">
+      <div className="title-ques-container">
+        <div className="img">
+          <img src={iconTest} alt="icon-test-hair" />
+        </div>
+        <h2>4. ¿En que clima vives?</h2>
+      </div>
+      <figure>
         <div>
-          <button type="button" onClick={() => setFourQuesOne("si")}>
-            Si
+          <h2>1</h2>
+          <img src={coldWeather} alt="img-cold-weather" />
+        </div>
+        <div>
+          <h2>2</h2>
+          <img src={tropicalWeather} alt="img-tropical-weather" />
+        </div>
+        <div>
+          <h2>3</h2>
+          <img src={desertWeather} alt="img-desert-weather" />
+        </div>
+        <div>
+          <h2>4</h2>
+          <img src={jungleWeather} alt="img-jungle-weather" />
+        </div>
+      </figure>
+      <div className="answer-container">
+        <div className="line"></div>
+        <div className="btn-container">
+          <button type="button" onClick={() => setColdOption("frio")}>
+            <span>1</span> FRIO
           </button>
-          <button type="button" onClick={() => setFourQuesOne("no")}>
-            No
+          <button type="button" onClick={() => setTropicalOption("tropical")}>
+            <span>2</span> TROPICAL
+          </button>
+          <button type="button" onClick={() => setDesertOption("desierto")}>
+            <span>3</span> DESIERTO
+          </button>
+          <button type="button" onClick={() => setJungleOption("selva")}>
+            <span>4</span> SELVA
           </button>
         </div>
-      </div>
-      <div>
-        <h2>¿Te has realizado keratina?</h2>
-        <div>
-          <button type="button" onClick={() => setFourQuesTwo("si")}>
-            Si
-          </button>
-          <button type="button" onClick={() => setFourQuesTwo("no")}>
-            No
+        <div className="next-btn">
+          <button type="button" onClick={() => handleClick()}>
+            SIGUIENTE
           </button>
         </div>
       </div>
