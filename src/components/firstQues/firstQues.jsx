@@ -36,7 +36,6 @@ const FirstQues = () => {
         <div className="img">
           <img src={iconTest} alt="icon-test-hair" />
         </div>
-
         <h2>1. Que tipo de cabello tienes?</h2>
       </div>
       <figure>

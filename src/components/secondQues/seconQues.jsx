@@ -33,8 +33,9 @@ const SecondQues = () => {
         <div className="img">
           <img src={iconTest} alt="icon-test-hair" />
         </div>
-
-        <h2>1. Que tipo de cabello tienes?</h2>
+        <h2 className="ques-two">
+          2. ¿Qué tipo de porosidad tiene tus hebras?
+        </h2>
       </div>
       <figure>
         <div>
