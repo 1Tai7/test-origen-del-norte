@@ -3,29 +3,23 @@
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import iconTest from "./../../assets/icon-pelo-test.svg";
-import lowStrand from "./../../assets/porosidad-baja.svg";
-import halfStrand from "./../../assets/porosidad-media.svg";
-import highStrand from "./../../assets/porosidad-alta.svg";
+import oiliness from "./../../assets/oleosidad.svg";
 
 const SecondQues = () => {
-  const [lowStrandOption, setLowStrandOption] = useState("");
-  const [halfStrandOption, setHalfStrandOption] = useState("");
-  const [highStrandOption, setHighStrandOption] = useState("");
+  const [greasyOption, setGreasyOption] = useState("");
+  const [dryOption, setDryOption] = useState("");
+  const [mixedOption, setMixedOption] = useState("");
 
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate("/third-ques");
+    navigate("/fourth-ques");
   };
   useEffect(() => {
-    if (
-      lowStrandOption !== "" &&
-      halfStrandOption !== "" &&
-      highStrandOption !== ""
-    ) {
+    if (greasyOption !== "" && dryOption !== "" && mixedOption !== "") {
       handleClick();
     }
     return () => {};
-  }, [lowStrandOption, halfStrandOption, highStrandOption]);
+  }, [greasyOption, dryOption, mixedOption]);
 
   return (
     <form id="form-one">
@@ -34,33 +28,24 @@ const SecondQues = () => {
           <img src={iconTest} alt="icon-test-hair" />
         </div>
 
-        <h2>1. Que tipo de cabello tienes?</h2>
+        <h2>3. ¿Qué oleosidad tiene tu cabello?</h2>
       </div>
       <figure>
         <div>
-          <h2>1</h2>
-          <img src={lowStrand} alt="img-low-strand" />
-        </div>
-        <div>
-          <h2>2</h2>
-          <img src={halfStrand} alt="img-half-strand" />
-        </div>
-        <div>
-          <h2>3</h2>
-          <img src={highStrand} alt="img-high-strand" />
+          <img src={oiliness} alt="img-oiliness" />
         </div>
       </figure>
       <div className="answer-container">
         <div className="line"></div>
         <div className="btn-container">
-          <button type="button" onClick={() => setLowStrandOption("baja")}>
-            <span>1</span> BAJA
+          <button type="button" onClick={() => setGreasyOption("graso")}>
+            <span>1</span> GRASO
           </button>
-          <button type="button" onClick={() => setHalfStrandOption("media")}>
-            <span>2</span> MEDIA
+          <button type="button" onClick={() => setDryOption("seco")}>
+            <span>2</span> SECO
           </button>
-          <button type="button" onClick={() => setHighStrandOption("alta")}>
-            <span>3</span> ALTA
+          <button type="button" onClick={() => setMixedOption("mixto")}>
+            <span>3</span> MIXTO
           </button>
         </div>
         <div className="next-btn">
