@@ -1,5 +1,4 @@
 import { createBrowserRouter } from "react-router-dom";
-import StartForm from "../components/startForm/startForm";
 import FirstQues from "../components/firstQues/firstQues";
 import SecondQues from "../components/secondQues/seconQues";
 import ThirdQues from "../components/thirdQues/thirdQues";
@@ -7,11 +6,12 @@ import FourthQues from "../components/fourthQues/fourthQues";
 import FifthQues from "../components/fifthQues/fifthQues";
 import SixthQues from "../components/sixthQues/sixthQues";
 import SeventhQues from "../components/seventhQues/seventhQues";
+import StartTest from "../components/startTest/startTest";
 
 export const router = createBrowserRouter([
   {
     path: "/",
-    element: <StartForm />,
+    element: <StartTest />,
   },
   {
     path: "/first-ques",

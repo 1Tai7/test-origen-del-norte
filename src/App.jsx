@@ -6,14 +6,14 @@ import FourthQues from "./components/fourthQues/fourthQues";
 import SecondQues from "./components/secondQues/seconQues";
 import SeventhQues from "./components/seventhQues/seventhQues";
 import SixthQues from "./components/sixthQues/sixthQues";
-import StartForm from "./components/startForm/startForm";
+import StartTest from "./components/startForm/startTest";
 import ThirdQues from "./components/thirdQues/thirdQues";
 
 const App = () => {
   return (
     <>
       <section className="container">
-        <StartForm />
+        <StartTest />
         <FirstQues />
         <SecondQues />
         <ThirdQues />
