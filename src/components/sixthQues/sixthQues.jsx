@@ -47,19 +47,19 @@ const SixthQues = () => {
       <figure>
         <div>
           <h2>1</h2>
-          <img src={dyedOrBleached} alt="img-cold-weather" />
+          <img src={dyedOrBleached} alt="img-dyed-or-bleached" />
         </div>
         <div>
           <h2>2</h2>
-          <img src={curlyOrStraightened} alt="img-tropical-weather" />
+          <img src={curlyOrStraightened} alt="img-curly-or-straightened" />
         </div>
         <div>
           <h2>3</h2>
-          <img src={ironOrDryer} alt="img-desert-weather" />
+          <img src={ironOrDryer} alt="img-iron-or-dryer" />
         </div>
         <div>
           <h2>4</h2>
-          <img src={noChemical} alt="img-jungle-weather" />
+          <img src={noChemical} alt="img-no-chemical" />
         </div>
       </figure>
       <div className="answer-container">
