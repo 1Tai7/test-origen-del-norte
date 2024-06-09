@@ -1,5 +1,5 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-import "./../../ques.css"
+import "./../../ques.css";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
 import iconTest from "./../../assets/icon-pelo-test.svg";
@@ -36,7 +36,7 @@ const FirstQues = () => {
         <div className="img">
           <img src={iconTest} alt="icon-test-hair" />
         </div>
-        <h2>1. Que tipo de cabello tienes?</h2>
+        <h2>1. ¿Qué tipo de cabello tienes?</h2>
       </div>
       <figure>
         <div>
@@ -59,16 +59,48 @@ const FirstQues = () => {
       <div className="answer-container">
         <div className="line"></div>
         <div className="btn-container">
-          <button type="button" onClick={() => setStraightOption("liso")}>
+          <button
+            type="button"
+            onClick={() =>
+              setStraightOption({
+                ques: "¿Qué tipo de cabello tienes?",
+                answ: "liso",
+              })
+            }
+          >
             <span>1</span> LISO
           </button>
-          <button type="button" onClick={() => setWavyOption("ondulado")}>
+          <button
+            type="button"
+            onClick={() =>
+              setWavyOption({
+                ques: "1.¿Qué tipo de cabello tienes?",
+                answ: "ondulado",
+              })
+            }
+          >
             <span>2</span> ONDULADO
           </button>
-          <button type="button" onClick={() => setCurlyOption("rizado")}>
+          <button
+            type="button"
+            onClick={() =>
+              setCurlyOption({
+                ques: "1.¿Qué tipo de cabello tienes?",
+                answ: "rizado",
+              })
+            }
+          >
             <span>3</span> RIZADO
           </button>
-          <button type="button" onClick={() => setAfroOption("afro")}>
+          <button
+            type="button"
+            onClick={() =>
+              setAfroOption({
+                ques: "1.¿Qué tipo de cabello tienes?",
+                answ: "afro",
+              })
+            }
+          >
             <span>4</span> AFRO
           </button>
         </div>

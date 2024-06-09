@@ -1,71 +1,92 @@
 /* eslint-disable react-hooks/exhaustive-deps */
-/* eslint-disable no-undef */
-import "./fifthQues.css";
+import "./../../ques.css";
 import { useNavigate } from "react-router-dom";
 import { useEffect, useState } from "react";
+import iconTest from "./../../assets/icon-pelo-test.svg";
+import gymActivity from "./../../assets/gym.svg";
+import anySportActivity from "./../../assets/algun-deporte.svg";
+import walkActivity from "./../../assets/caminar.svg";
 
 const FifthQues = () => {
-  const [fattyOption, setFattyOption] = useState("");
-  const [dryOption, setDryOption] = useState("");
-  const [itchOption, setItchOption] = useState("");
-  const [dandruffOption, setDandruffOption] = useState("");
-  const [scaleOption, setScaleOption] = useState("");
-  const [normalOption, setNormalOption] = useState("");
+  const [gymOption, setGymOption] = useState("");
+  const [anySportOption, setAnySportOption] = useState("");
+  const [walkOption, setWalkOption] = useState("");
 
   const navigate = useNavigate();
   const handleClick = () => {
     navigate("/sixth-ques");
   };
   useEffect(() => {
-    if (
-      fattyOption !== "" &&
-      dryOption !== "" &&
-      itchOption !== "" &&
-      dandruffOption !== "" &&
-      scaleOption !== "" &&
-      normalOption !== ""
-    ) {
+    if (gymOption !== "" && anySportOption !== "" && walkOption !== "") {
       handleClick();
     }
     return () => {};
-  }, [
-    fattyOption,
-    dryOption,
-    itchOption,
-    dandruffOption,
-    scaleOption,
-    normalOption,
-  ]);
+  }, [gymOption, anySportOption, walkOption]);
 
   return (
-    <form>
-      <h2>¿Cómo es tu cuero cabelludo?</h2>
-      <h3>Selecciona todas las opciones con las que te identificas</h3>
-
-      <div className="hair-type-btn">
-        <button type="button" onClick={() => setFattyOption("graso")}>
-          Graso
-        </button>
-        <button type="button" onClick={() => setDryOption("seco")}>
-          Seco
-        </button>
-        <button type="button" onClick={() => setItchOption("piquiña")}>
-          Con piquiña
-        </button>
-        <button type="button" onClick={() => setDandruffOption("caspa")}>
-          Con caspa
-        </button>
-        <button type="button" onClick={() => setScaleOption("escamas")}>
-          Con escamas
-        </button>
-        <button type="button" onClick={() => setNormalOption("normal")}>
-          Normal
-        </button>
+    <form id="form-one">
+      <div className="title-ques-container">
+        <div className="img">
+          <img src={iconTest} alt="icon-test-hair" />
+        </div>
+        <h2>5. ¿Cuánta actividad física realizas?</h2>
       </div>
-      <div className="next-btn">
-        <button type="button" onClick={() => handleClick()}>
-          Siguiente
-        </button>
+      <figure>
+        <div>
+          <h2>1</h2>
+          <img src={gymActivity} alt="img-gym-activity" />
+        </div>
+        <div>
+          <h2>2</h2>
+          <img src={anySportActivity} alt="img-any-sport-activity" />
+        </div>
+        <div>
+          <h2>3</h2>
+          <img src={walkActivity} alt="img-walk-activity" />
+        </div>
+      </figure>
+      <div className="answer-container">
+        <div className="line"></div>
+        <div className="btn-container">
+          <button
+            type="button"
+            onClick={() =>
+              setGymOption({
+                ques: "5.¿Cuánta actividad física realizas?",
+                answ: "Vas al gimnasio",
+              })
+            }
+          >
+            <span>1</span> Vas al gimnasio
+          </button>
+          <button
+            type="button"
+            onClick={() =>
+              setAnySportOption({
+                ques: "5.¿Cuánta actividad física realizas?",
+                answ: "Practicas algún deporte",
+              })
+            }
+          >
+            <span>2</span> Practicas algún deporte
+          </button>
+          <button
+            type="button"
+            onClick={() =>
+              setWalkOption({
+                ques: "5.¿Cuánta actividad física realizas?",
+                answ: "Caminas largas distancias",
+              })
+            }
+          >
+            <span>3</span> Caminas largas distancias
+          </button>
+        </div>
+        <div className="next-btn">
+          <button type="button" onClick={() => handleClick()}>
+            SIGUIENTE
+          </button>
+        </div>
       </div>
     </form>
   );

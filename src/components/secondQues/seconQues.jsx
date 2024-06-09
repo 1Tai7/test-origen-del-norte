@@ -54,13 +54,37 @@ const SecondQues = () => {
       <div className="answer-container">
         <div className="line"></div>
         <div className="btn-container">
-          <button type="button" onClick={() => setLowStrandOption("baja")}>
+          <button
+            type="button"
+            onClick={() =>
+              setLowStrandOption({
+                ques: "2.¿Qué tipo de porosidad tiene tus hebras?",
+                answ: "baja",
+              })
+            }
+          >
             <span>1</span> BAJA
           </button>
-          <button type="button" onClick={() => setHalfStrandOption("media")}>
+          <button
+            type="button"
+            onClick={() =>
+              setHalfStrandOption({
+                ques: "2.¿Qué tipo de porosidad tiene tus hebras?",
+                answ: "media",
+              })
+            }
+          >
             <span>2</span> MEDIA
           </button>
-          <button type="button" onClick={() => setHighStrandOption("alta")}>
+          <button
+            type="button"
+            onClick={() =>
+              setHighStrandOption({
+                ques: "2.¿Qué tipo de porosidad tiene tus hebras?",
+                answ: "alta",
+              })
+            }
+          >
             <span>3</span> ALTA
           </button>
         </div>

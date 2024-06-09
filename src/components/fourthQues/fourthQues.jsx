@@ -59,16 +59,45 @@ const FourthQues = () => {
       <div className="answer-container">
         <div className="line"></div>
         <div className="btn-container">
-          <button type="button" onClick={() => setColdOption("frio")}>
+          <button
+            type="button"
+            onClick={() =>
+              setColdOption({ ques: "4. ¿En que clima vives?", answ: "frio" })
+            }
+          >
             <span>1</span> FRIO
           </button>
-          <button type="button" onClick={() => setTropicalOption("tropical")}>
+          <button
+            type="button"
+            onClick={() =>
+              setTropicalOption({
+                ques: "4. ¿En que clima vives?",
+                answ: "tropical",
+              })
+            }
+          >
             <span>2</span> TROPICAL
           </button>
-          <button type="button" onClick={() => setDesertOption("desierto")}>
+          <button
+            type="button"
+            onClick={() =>
+              setDesertOption({
+                ques: "4. ¿En que clima vives?",
+                answ: "desierto",
+              })
+            }
+          >
             <span>3</span> DESIERTO
           </button>
-          <button type="button" onClick={() => setJungleOption("selva")}>
+          <button
+            type="button"
+            onClick={() =>
+              setJungleOption({
+                ques: "4. ¿En que clima vives?",
+                answ: "selva",
+              })
+            }
+          >
             <span>4</span> SELVA
           </button>
         </div>

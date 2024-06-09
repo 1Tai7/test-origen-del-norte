@@ -38,13 +38,37 @@ const SecondQues = () => {
       <div className="answer-container">
         <div className="line"></div>
         <div className="btn-container">
-          <button type="button" onClick={() => setGreasyOption("graso")}>
+          <button
+            type="button"
+            onClick={() =>
+              setGreasyOption({
+                ques: "3. ¿Qué oleosidad tiene tu cabello?",
+                answ: "graso",
+              })
+            }
+          >
             <span>1</span> GRASO
           </button>
-          <button type="button" onClick={() => setDryOption("seco")}>
+          <button
+            type="button"
+            onClick={() =>
+              setDryOption({
+                ques: "3. ¿Qué oleosidad tiene tu cabello?",
+                answ: "seco",
+              })
+            }
+          >
             <span>2</span> SECO
           </button>
-          <button type="button" onClick={() => setMixedOption("mixto")}>
+          <button
+            type="button"
+            onClick={() =>
+              setMixedOption({
+                ques: "3. ¿Qué oleosidad tiene tu cabello?",
+                answ: "mixto",
+              })
+            }
+          >
             <span>3</span> MIXTO
           </button>
         </div>
