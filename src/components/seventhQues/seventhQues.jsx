@@ -16,7 +16,7 @@ const SeventhQues = () => {
 
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate("/");
+    navigate("/download-result");
   };
   useEffect(() => {
     if (

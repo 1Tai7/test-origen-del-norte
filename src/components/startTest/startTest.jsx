@@ -8,16 +8,14 @@ const StartTest = () => {
   return (
     <section className="start-test-container">
       <main>
-        <div className="images-container">
-          <div>
-            <img src={logoOrigen} alt="logo-origen" />
-          </div>
-          <div>
-            <img src={logoHairTest} alt="logo-hair-test" />
-          </div>
-          <div>
-            <img src={handWithPhone} alt="img-hand-with-phone" />
-          </div>
+        <div>
+          <img src={logoOrigen} alt="logo-origen" />
+        </div>
+        <div className="logo-hair-test">
+          <img src={logoHairTest} alt="logo-hair-test" />
+        </div>
+        <div>
+          <img src={handWithPhone} alt="img-hand-with-phone" />
         </div>
       </main>
     </section>

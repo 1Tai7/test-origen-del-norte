@@ -9,29 +9,35 @@
 .start-test-container main {
   background-color: var(--light-orange);
   position: absolute;
-  z-index: 2;
-  border-radius: 100px 100px 0 0;
+  bottom: 0;
   top: 8rem;
-  width: 100%;
-  height: 100%;
-}
-.start-test-container .images-container {
   display: flex;
+
   flex-direction: column;
   align-items: center;
+  width: 100%;
+  border-radius: 100px 100px 0 0;
+}
+
+.start-test-container div:first-child img {
+  background-color: var(--dark-olive);
+  border-radius: 100px;
+  padding: 0.7rem;
+  width: 7rem;
+  height: 7rem;
   position: relative;
   top: -5rem;
 }
-.images-container div:last-child {
-  bottom: -5px;
-  position: fixed;
-  width: 100%;
-  height: auto;
+.start-test-container .logo-hair-test {
+  position: relative;
+  top: -5rem;
 }
-.images-container div:first-child img {
-  background-color: var(--dark-olive);
-  border-radius: 100px;
-  padding: 1rem;
-  width: 7rem;
-  height: 7rem;
+.start-test-container div:last-child {
+  display: flex;
+  justify-content: center;
+}
+.start-test-container div:last-child img {
+  position: absolute;
+  bottom: 0;
+  left: 0;
 }

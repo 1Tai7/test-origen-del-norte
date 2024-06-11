@@ -7,10 +7,11 @@ import FifthQues from "../components/fifthQues/fifthQues";
 import SixthQues from "../components/sixthQues/sixthQues";
 import SeventhQues from "../components/seventhQues/seventhQues";
 import StartTest from "../components/startTest/startTest";
+import DownloadResult from "../components/downloadResult/downloadResult";
 
 export const router = createBrowserRouter([
   {
-    path: "/",
+    path: "/start-test",
     element: <StartTest />,
   },
   {
@@ -40,5 +41,9 @@ export const router = createBrowserRouter([
   {
     path: "/seventh-ques",
     element: <SeventhQues />,
+  },
+  {
+    path: "/download-result",
+    element: <DownloadResult/>
   },
 ]);
