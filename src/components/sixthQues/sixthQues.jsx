@@ -19,6 +19,28 @@ const SixthQues = () => {
   const handleClick = () => {
     navigate("/seventh-ques");
   };
+  const handleAnswer = ({ ques, answ }) => {
+    setDyedOrBleachedOption({
+      ques: ques,
+      answ: answ,
+    });
+    localStorage.setItem("respuesta 6", JSON.stringify({ ques, answ }));
+    setCurlyOrStraightenedOption({
+      ques: ques,
+      answ: answ,
+    });
+    localStorage.setItem("respuesta 6", JSON.stringify({ ques, answ }));
+    setIronOrDryerOption({
+      ques: ques,
+      answ: answ,
+    });
+    localStorage.setItem("respuesta 6", JSON.stringify({ ques, answ }));
+    setNoChemicalOption({
+      ques: ques,
+      answ: answ,
+    });
+    localStorage.setItem("respuesta 6", JSON.stringify({ ques, answ }));
+  };
   useEffect(() => {
     if (
       dyedOrBleachedOption !== "" &&
@@ -68,9 +90,9 @@ const SixthQues = () => {
           <button
             type="button"
             onClick={() =>
-              setDyedOrBleachedOption({
+              handleAnswer({
                 ques: "6. ¿Te practicas algún proceso químico o de calor?",
-                answ: "Tinturado y decolorado",
+                answ: "Respuesta: Tinturado y decolorado",
               })
             }
           >
@@ -79,9 +101,9 @@ const SixthQues = () => {
           <button
             type="button"
             onClick={() =>
-              setCurlyOrStraightenedOption({
+              handleAnswer({
                 ques: "6. ¿Te practicas algún proceso químico o de calor?",
-                answ: "Alisado o rizado quimicos",
+                answ: "Respuesta: Alisado o rizado quimicos",
               })
             }
           >
@@ -90,9 +112,9 @@ const SixthQues = () => {
           <button
             type="button"
             onClick={() =>
-              setIronOrDryerOption({
+              handleAnswer({
                 ques: "6. ¿Te practicas algún proceso químico o de calor?",
-                answ: "Plancha o secador",
+                answ: "Respuesta: Plancha o secador",
               })
             }
           >

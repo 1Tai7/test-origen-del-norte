@@ -8,6 +8,7 @@ import SixthQues from "../components/sixthQues/sixthQues";
 import SeventhQues from "../components/seventhQues/seventhQues";
 import StartTest from "../components/startTest/startTest";
 import DownloadResult from "../components/downloadResult/downloadResult";
+import ResultsTest from "../components/resultsTest/resultsTest";
 
 export const router = createBrowserRouter([
   {
@@ -44,6 +45,10 @@ export const router = createBrowserRouter([
   },
   {
     path: "/download-result",
-    element: <DownloadResult/>
+    element: <DownloadResult />,
+  },
+  {
+    path: "/results-test",
+    element: <ResultsTest />,
   },
 ]);

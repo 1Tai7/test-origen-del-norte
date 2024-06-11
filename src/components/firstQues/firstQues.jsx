@@ -18,6 +18,29 @@ const FirstQues = () => {
   const handleClick = () => {
     navigate("/second-ques");
   };
+
+  const handleAnswer = ({ ques, answ }) => {
+    setStraightOption({
+      ques: ques,
+      answ: answ,
+    });
+    localStorage.setItem("respuesta 1", JSON.stringify({ ques, answ }));
+    setWavyOption({
+      ques: ques,
+      answ: answ,
+    });
+    localStorage.setItem("respuesta 1", JSON.stringify({ ques, answ }));
+    setCurlyOption({
+      ques: ques,
+      answ: answ,
+    });
+    localStorage.setItem("respuesta 1", JSON.stringify({ ques, answ }));
+    setAfroOption({
+      ques: ques,
+      answ: answ,
+    });
+    localStorage.setItem("respuesta 1", JSON.stringify({ ques, answ }));
+  };
   useEffect(() => {
     if (
       straightOption !== "" &&
@@ -62,9 +85,9 @@ const FirstQues = () => {
           <button
             type="button"
             onClick={() =>
-              setStraightOption({
-                ques: "¿Qué tipo de cabello tienes?",
-                answ: "liso",
+              handleAnswer({
+                ques: "1.¿Qué tipo de cabello tienes?",
+                answ: "Respuesta: Liso",
               })
             }
           >
@@ -73,9 +96,9 @@ const FirstQues = () => {
           <button
             type="button"
             onClick={() =>
-              setWavyOption({
+              handleAnswer({
                 ques: "1.¿Qué tipo de cabello tienes?",
-                answ: "ondulado",
+                answ: "Respuesta: Ondulado",
               })
             }
           >
@@ -84,9 +107,9 @@ const FirstQues = () => {
           <button
             type="button"
             onClick={() =>
-              setCurlyOption({
+              handleAnswer({
                 ques: "1.¿Qué tipo de cabello tienes?",
-                answ: "rizado",
+                answ: "Respuesta: Rizado",
               })
             }
           >
@@ -95,9 +118,9 @@ const FirstQues = () => {
           <button
             type="button"
             onClick={() =>
-              setAfroOption({
+              handleAnswer({
                 ques: "1.¿Qué tipo de cabello tienes?",
-                answ: "afro",
+                answ: "Respuesta: Afro",
               })
             }
           >

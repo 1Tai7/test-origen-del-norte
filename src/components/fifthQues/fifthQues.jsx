@@ -16,6 +16,24 @@ const FifthQues = () => {
   const handleClick = () => {
     navigate("/sixth-ques");
   };
+  const handleAnswer = ({ ques, answ }) => {
+    setGymOption({
+      ques: ques,
+      answ: answ,
+    });
+    localStorage.setItem("respuesta 5", JSON.stringify({ ques, answ }));
+    setAnySportOption({
+      ques: ques,
+      answ: answ,
+    });
+    localStorage.setItem("respuesta 5", JSON.stringify({ ques, answ }));
+    setWalkOption({
+      ques: ques,
+      answ: answ,
+    });
+    localStorage.setItem("respuesta 5", JSON.stringify({ ques, answ }));
+  };
+
   useEffect(() => {
     if (gymOption !== "" && anySportOption !== "" && walkOption !== "") {
       handleClick();
@@ -51,9 +69,9 @@ const FifthQues = () => {
           <button
             type="button"
             onClick={() =>
-              setGymOption({
+              handleAnswer({
                 ques: "5.¿Cuánta actividad física realizas?",
-                answ: "Vas al gimnasio",
+                answ: "Respuesta: Vas al gimnasio",
               })
             }
           >
@@ -62,9 +80,9 @@ const FifthQues = () => {
           <button
             type="button"
             onClick={() =>
-              setAnySportOption({
+              handleAnswer({
                 ques: "5.¿Cuánta actividad física realizas?",
-                answ: "Practicas algún deporte",
+                answ: "Respuesta: Practicas algún deporte",
               })
             }
           >
@@ -73,9 +91,9 @@ const FifthQues = () => {
           <button
             type="button"
             onClick={() =>
-              setWalkOption({
+              handleAnswer({
                 ques: "5.¿Cuánta actividad física realizas?",
-                answ: "Caminas largas distancias",
+                answ: "Respuesta: Caminas largas distancias",
               })
             }
           >

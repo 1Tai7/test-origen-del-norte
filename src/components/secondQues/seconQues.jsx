@@ -16,6 +16,24 @@ const SecondQues = () => {
   const handleClick = () => {
     navigate("/third-ques");
   };
+  const handleAnswer = ({ ques, answ }) => {
+    setLowStrandOption({
+      ques: ques,
+      answ: answ,
+    });
+    localStorage.setItem("respuesta 2", JSON.stringify({ ques, answ }));
+    setHalfStrandOption({
+      ques: ques,
+      answ: answ,
+    });
+    localStorage.setItem("respuesta 2", JSON.stringify({ ques, answ }));
+    setHighStrandOption({
+      ques: ques,
+      answ: answ,
+    });
+    localStorage.setItem("respuesta 2", JSON.stringify({ ques, answ }));
+  };
+
   useEffect(() => {
     if (
       lowStrandOption !== "" &&
@@ -57,9 +75,9 @@ const SecondQues = () => {
           <button
             type="button"
             onClick={() =>
-              setLowStrandOption({
+              handleAnswer({
                 ques: "2.¿Qué tipo de porosidad tiene tus hebras?",
-                answ: "baja",
+                answ: "Respuesta: Baja",
               })
             }
           >
@@ -68,9 +86,9 @@ const SecondQues = () => {
           <button
             type="button"
             onClick={() =>
-              setHalfStrandOption({
+              handleAnswer({
                 ques: "2.¿Qué tipo de porosidad tiene tus hebras?",
-                answ: "media",
+                answ: "Respuesta: Media",
               })
             }
           >
@@ -79,9 +97,9 @@ const SecondQues = () => {
           <button
             type="button"
             onClick={() =>
-              setHighStrandOption({
+              handleAnswer({
                 ques: "2.¿Qué tipo de porosidad tiene tus hebras?",
-                answ: "alta",
+                answ: "Respuesta: Alta",
               })
             }
           >

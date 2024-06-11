@@ -18,6 +18,29 @@ const FourthQues = () => {
   const handleClick = () => {
     navigate("/fifth-ques");
   };
+  const handleAnswer = ({ ques, answ }) => {
+    setColdOption({
+      ques: ques,
+      answ: answ,
+    });
+    localStorage.setItem("respuesta 4", JSON.stringify({ ques, answ }));
+    setTropicalOption({
+      ques: ques,
+      answ: answ,
+    });
+    localStorage.setItem("respuesta 4", JSON.stringify({ ques, answ }));
+    setDesertOption({
+      ques: ques,
+      answ: answ,
+    });
+    localStorage.setItem("respuesta 4", JSON.stringify({ ques, answ }));
+    setJungleOption({
+      ques: ques,
+      answ: answ,
+    });
+    localStorage.setItem("respuesta 4", JSON.stringify({ ques, answ }));
+  };
+
   useEffect(() => {
     if (
       coldOption !== "" &&
@@ -62,7 +85,10 @@ const FourthQues = () => {
           <button
             type="button"
             onClick={() =>
-              setColdOption({ ques: "4. ¿En que clima vives?", answ: "frio" })
+              handleAnswer({
+                ques: "4. ¿En que clima vives?",
+                answ: "Respuesta: Frio",
+              })
             }
           >
             <span>1</span> FRIO
@@ -70,9 +96,9 @@ const FourthQues = () => {
           <button
             type="button"
             onClick={() =>
-              setTropicalOption({
+              handleAnswer({
                 ques: "4. ¿En que clima vives?",
-                answ: "tropical",
+                answ: "Respuesta: Tropical",
               })
             }
           >
@@ -81,9 +107,9 @@ const FourthQues = () => {
           <button
             type="button"
             onClick={() =>
-              setDesertOption({
+              handleAnswer({
                 ques: "4. ¿En que clima vives?",
-                answ: "desierto",
+                answ: "Respuesta: Desierto",
               })
             }
           >
@@ -92,9 +118,9 @@ const FourthQues = () => {
           <button
             type="button"
             onClick={() =>
-              setJungleOption({
+              handleAnswer({
                 ques: "4. ¿En que clima vives?",
-                answ: "selva",
+                answ: "Respuesta: Selva",
               })
             }
           >

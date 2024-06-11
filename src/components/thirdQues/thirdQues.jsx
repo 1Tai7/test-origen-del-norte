@@ -14,6 +14,24 @@ const SecondQues = () => {
   const handleClick = () => {
     navigate("/fourth-ques");
   };
+  const handleAnswer = ({ ques, answ }) => {
+    setGreasyOption({
+      ques: ques,
+      answ: answ,
+    });
+    localStorage.setItem("respuesta 3", JSON.stringify({ ques, answ }));
+    setDryOption({
+      ques: ques,
+      answ: answ,
+    });
+    localStorage.setItem("respuesta 3", JSON.stringify({ ques, answ }));
+    setMixedOption({
+      ques: ques,
+      answ: answ,
+    });
+    localStorage.setItem("respuesta 3", JSON.stringify({ ques, answ }));
+  };
+
   useEffect(() => {
     if (greasyOption !== "" && dryOption !== "" && mixedOption !== "") {
       handleClick();
@@ -41,9 +59,9 @@ const SecondQues = () => {
           <button
             type="button"
             onClick={() =>
-              setGreasyOption({
+              handleAnswer({
                 ques: "3. ¿Qué oleosidad tiene tu cabello?",
-                answ: "graso",
+                answ: "Respuesta: Graso",
               })
             }
           >
@@ -52,9 +70,9 @@ const SecondQues = () => {
           <button
             type="button"
             onClick={() =>
-              setDryOption({
+              handleAnswer({
                 ques: "3. ¿Qué oleosidad tiene tu cabello?",
-                answ: "seco",
+                answ: "Respuesta: Seco",
               })
             }
           >
@@ -63,9 +81,9 @@ const SecondQues = () => {
           <button
             type="button"
             onClick={() =>
-              setMixedOption({
+              handleAnswer({
                 ques: "3. ¿Qué oleosidad tiene tu cabello?",
-                answ: "mixto",
+                answ: "Respuesta: Mixto",
               })
             }
           >

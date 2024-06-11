@@ -18,6 +18,28 @@ const SeventhQues = () => {
   const handleClick = () => {
     navigate("/download-result");
   };
+  const handleAnswer = ({ ques, answ }) => {
+    setDandruffOption({
+      ques: ques,
+      answ: answ,
+    });
+    localStorage.setItem("respuesta 7", JSON.stringify({ ques, answ }));
+    setFungusOption({
+      ques: ques,
+      answ: answ,
+    });
+    localStorage.setItem("respuesta 7", JSON.stringify({ ques, answ }));
+    setAlopeciaOption({
+      ques: ques,
+      answ: answ,
+    });
+    localStorage.setItem("respuesta 7", JSON.stringify({ ques, answ }));
+    setNoDiseaseOption({
+      ques: ques,
+      answ: answ,
+    });
+    localStorage.setItem("respuesta 7", JSON.stringify({ ques, answ }));
+  };
   useEffect(() => {
     if (
       dandruffOption !== "" &&
@@ -62,9 +84,9 @@ const SeventhQues = () => {
           <button
             type="button"
             onClick={() =>
-              setDandruffOption({
+              handleAnswer({
                 ques: "7. ¿Tienes alguna de estas enfermedades capilares?",
-                answ: "Caspa (Dermatitis seborreica)",
+                answ: "Respuesta: Caspa (Dermatitis seborreica)",
               })
             }
           >
@@ -73,9 +95,9 @@ const SeventhQues = () => {
           <button
             type="button"
             onClick={() =>
-              setFungusOption({
+              handleAnswer({
                 ques: "7. ¿Tienes alguna de estas enfermedades capilares?",
-                answ: "Hongos (Micosis capilar)",
+                answ: "Respuesta: Hongos (Micosis capilar)",
               })
             }
           >
@@ -84,9 +106,9 @@ const SeventhQues = () => {
           <button
             type="button"
             onClick={() =>
-              setAlopeciaOption({
+              handleAnswer({
                 ques: "7. ¿Tienes alguna de estas enfermedades capilares?",
-                answ: "Alopecia (Alopecia areatada)",
+                answ: "Respuesta: Alopecia (Alopecia areatada)",
               })
             }
           >
@@ -95,9 +117,9 @@ const SeventhQues = () => {
           <button
             type="button"
             onClick={() =>
-              setNoDiseaseOption({
+              handleAnswer({
                 ques: "7. ¿Tienes alguna de estas enfermedades capilares?",
-                answ: "Ninguno",
+                answ: "Respuesta: Ninguno",
               })
             }
           >
