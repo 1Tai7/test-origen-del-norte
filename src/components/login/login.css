@@ -1,0 +1,99 @@
+  .hair-model,
+  .white-mesh {
+    position: absolute;
+    width: 100%;
+    height: 100vh;
+    background-size: cover;
+  }
+  .hair-model {
+    background-image: url("./../../assets/modelo-cabello.svg");
+  }
+  .white-mesh {
+    background-image: url("./../../assets/malla-blanca.svg");
+  }
+  .login-container main {
+    background-color: var(--orange-opacity);
+    position: absolute;
+    bottom: 0;
+    top: 8rem;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-radius: 100px 100px 0 0;
+  }
+  .login-container .logo-origen img {
+    width: 10rem;
+    height: 10rem;
+  }
+  .login-container .logo-origen {
+    background-color: var(--wine);
+    border-radius: 100px;
+    padding: 0.7rem;
+    position: relative;
+    top: -5rem;
+  }
+  .login-form {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    gap: 1.5rem;
+    position: absolute;
+    top: 8rem;
+    width: 70%;
+  }
+  .login-form input {
+
+    text-align: center;
+    color: var(--white);
+    border: 1px solid var(--white);
+    border-radius: 10px;
+    background-color: var(--light-wine);
+    outline: none;
+    padding: 0.5rem;
+    box-shadow: 0px 4px 11px -1px rgba(0, 0, 0, 0.6);
+    letter-spacing: 1px;
+  }
+  .login-form input::placeholder {
+    color: #ffffffac;
+    font-weight: lighter;
+  }
+  .login-form button {
+    color: var(--white);
+    border: none;
+    background-color: var(--wine);
+     padding: 0.5rem 5rem;
+    border-radius: 2rem;
+  }
+  .social-media-container {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    bottom: 1.5rem;
+    gap: 1rem;
+  }
+  .social-media-container div {
+    
+    width: 100%;
+    padding: 4px 16px;
+    display: flex;
+  }
+  .social-media-container img {
+ 
+    margin-right: 1rem;
+  }
+  .fb-container,
+  .google-container {
+    background-color: var(--white);
+  }
+  .fb-container,
+  .google-container,
+  .apple-container {
+    color: #0866ff;
+    font-weight: 700;
+    border-radius: 1rem;
+  }
+  .apple-container {
+    background-color: #262626;
+  }
+

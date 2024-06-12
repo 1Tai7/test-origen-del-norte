@@ -10,11 +10,16 @@ import StartTest from "../components/startTest/startTest";
 import ResultsTest from "../components/resultsTest/resultsTest";
 import SeeResults from "../components/seeResult/seeResult";
 import WelcomeApp from "../components/welcome/welcome";
+import Login from "../components/login/login";
 
 export const router = createBrowserRouter([
   {
     path: "/welcome",
     element: <WelcomeApp />,
+  },
+  {
+    path: "/login",
+    element: <Login />,
   },
   {
     path: "/start-test",

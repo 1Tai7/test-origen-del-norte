@@ -1,9 +1,11 @@
 :root {
   --white: #ffffff;
   --light-orange: #fab57e;
-  --orange-opcity: #fab67e74;
+  --light-orange-opcity: #fab57e6e;
   --orange: #f16832;
+  --orange-opacity: #f16832b3;
   --wine: #88000c;
+  --light-wine: #88000c2e;
   --brown: #3c1100;
   --light-olive: #807f6b;
   --dark-olive: #334a33;
@@ -18,4 +20,3 @@
   font-family: "Didact Gothic", sans-serif;
   box-sizing: border-box;
 }
-

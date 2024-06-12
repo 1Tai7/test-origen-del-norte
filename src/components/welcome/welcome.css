@@ -3,7 +3,7 @@
   justify-content: center;
 }
 .welcome-container main {
-  background-color: var(--orange-opcity);
+  background-color: var(--light-orange-opcity);
   position: absolute;
   bottom: 0;
   top: 6rem;
