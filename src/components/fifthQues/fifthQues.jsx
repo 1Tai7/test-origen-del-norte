@@ -43,69 +43,71 @@ const FifthQues = () => {
 
   return (
     <form id="form-one">
-      <div className="title-ques-container">
-        <div className="img">
-          <img src={iconTest} alt="icon-test-hair" />
+      <section>
+        <div className="title-ques-container">
+          <div className="img">
+            <img src={iconTest} alt="icon-test-hair" />
+          </div>
+          <h2>5. ¿Cuánta actividad física realizas?</h2>
         </div>
-        <h2>5. ¿Cuánta actividad física realizas?</h2>
-      </div>
-      <figure>
-        <div>
-          <h2>1</h2>
-          <img src={gymActivity} alt="img-gym-activity" />
+        <figure>
+          <div>
+            <h2>1</h2>
+            <img src={gymActivity} alt="img-gym-activity" />
+          </div>
+          <div>
+            <h2>2</h2>
+            <img src={anySportActivity} alt="img-any-sport-activity" />
+          </div>
+          <div>
+            <h2>3</h2>
+            <img src={walkActivity} alt="img-walk-activity" />
+          </div>
+        </figure>
+        <div className="answer-container">
+          <div className="line"></div>
+          <div className="btn-container">
+            <button
+              type="button"
+              onClick={() =>
+                handleAnswer({
+                  ques: "¿Cuánta actividad física realizas?",
+                  answ: "Respuesta: Vas al gimnasio",
+                })
+              }
+            >
+              <span>1</span> Vas al gimnasio
+            </button>
+            <button
+              type="button"
+              onClick={() =>
+                handleAnswer({
+                  ques: "¿Cuánta actividad física realizas?",
+                  answ: "Respuesta: Practicas algún deporte",
+                })
+              }
+            >
+              <span>2</span> Practicas algún deporte
+            </button>
+            <button
+              type="button"
+              onClick={() =>
+                handleAnswer({
+                  ques: "¿Cuánta actividad física realizas?",
+                  answ: "Respuesta: Caminas largas distancias",
+                })
+              }
+            >
+              <span>3</span> Caminas largas distancias
+            </button>
+          </div>
+          <div className="next-btn">
+            <button type="button" onClick={() => handleClick()}>
+              SIGUIENTE
+            </button>
+          </div>
         </div>
-        <div>
-          <h2>2</h2>
-          <img src={anySportActivity} alt="img-any-sport-activity" />
-        </div>
-        <div>
-          <h2>3</h2>
-          <img src={walkActivity} alt="img-walk-activity" />
-        </div>
-      </figure>
-      <div className="answer-container">
-        <div className="line"></div>
-        <div className="btn-container">
-          <button
-            type="button"
-            onClick={() =>
-              handleAnswer({
-                ques: "5.¿Cuánta actividad física realizas?",
-                answ: "Respuesta: Vas al gimnasio",
-              })
-            }
-          >
-            <span>1</span> Vas al gimnasio
-          </button>
-          <button
-            type="button"
-            onClick={() =>
-              handleAnswer({
-                ques: "5.¿Cuánta actividad física realizas?",
-                answ: "Respuesta: Practicas algún deporte",
-              })
-            }
-          >
-            <span>2</span> Practicas algún deporte
-          </button>
-          <button
-            type="button"
-            onClick={() =>
-              handleAnswer({
-                ques: "5.¿Cuánta actividad física realizas?",
-                answ: "Respuesta: Caminas largas distancias",
-              })
-            }
-          >
-            <span>3</span> Caminas largas distancias
-          </button>
-        </div>
-        <div className="next-btn">
-          <button type="button" onClick={() => handleClick()}>
-            SIGUIENTE
-          </button>
-        </div>
-      </div>
+      </section>
     </form>
   );
 };

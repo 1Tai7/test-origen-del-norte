@@ -1,11 +1,14 @@
 import "./downloadResult.css";
-// import model from "./../../assets/modelo-naranja-inicio.svg";
-// import orangeMNesh from "./../../assets/malla-naranja.svg";
+import { useNavigate } from "react-router-dom";
 import iconPdf from "./../../assets/icon-pdf.svg";
 import logoOrigen from "./../../assets/logo-origen.svg";
 import hairTest from "./../../assets/PELO-TEST-LOGO.svg";
 
 const DownloadResult = () => {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/results-test");
+  };
   return (
     <section className="download-result-container">
       <div className="img-model"></div>
@@ -17,8 +20,10 @@ const DownloadResult = () => {
         <div className="icon-pdf">
           <img src={iconPdf} alt="icon-pdf" />
         </div>
-        <div>
-          <button>DESCARGAR RESULTADO</button>
+        <div className="next-btn">
+          <button type="button" onClick={() => handleClick()}>
+            VER RESULTADOS
+          </button>
         </div>
         <div className="hair-test">
           <img src={hairTest} alt="hair-test" />

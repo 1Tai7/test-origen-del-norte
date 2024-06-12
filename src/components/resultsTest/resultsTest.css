@@ -1,0 +1,71 @@
+.results-container {
+  height: auto;
+  background-image: url("./../../assets/malla-naranja.svg");
+
+  background-size: cover;
+  background-color: var(--green);
+}
+.results-container div {
+  backdrop-filter: blur(2px);
+  height: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: left;
+}
+.number-results,
+.ques-results {
+  color: var(--white);
+}
+.results-container .number-results {
+  background-color: var(--light-orange);
+  font-size: xx-large;
+  border-radius: 50%;
+  width: 3rem;
+  height: 3rem;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  z-index: 1;
+  top: 2rem;
+  left: -9rem;
+}
+.show-result-ctn {
+  background-color: var(--light-orange);
+  border-radius: 10px;
+  font-size: large;
+  width: 75%;
+}
+
+.ques-results {
+  background-color: var(--green);
+  border-radius: 10px;
+}
+.ques-results span,
+.answ-results span {
+  width: 100%;
+  display: flex;
+  align-items: start;
+}
+.answ-results,
+.ques-results {
+  padding: 0.5rem 1rem;
+  width: 100%;
+}
+.number-results,
+.show-result-ctn,
+.ques-results,
+button {
+  box-shadow: 0px 5px 12px 0px rgba(0, 0, 0, 0.21);
+}
+.tips-button {
+  margin-block: 2rem;
+}
+.tips-button button {
+  border: none;
+  background-color: var(--light-orange);
+  border-radius: 10px;
+  padding: 1rem;
+  font-size: medium;
+}

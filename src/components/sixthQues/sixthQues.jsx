@@ -91,7 +91,7 @@ const SixthQues = () => {
             type="button"
             onClick={() =>
               handleAnswer({
-                ques: "6. ¿Te practicas algún proceso químico o de calor?",
+                ques: "¿Te practicas algún proceso químico o de calor?",
                 answ: "Respuesta: Tinturado y decolorado",
               })
             }
@@ -102,7 +102,7 @@ const SixthQues = () => {
             type="button"
             onClick={() =>
               handleAnswer({
-                ques: "6. ¿Te practicas algún proceso químico o de calor?",
+                ques: "¿Te practicas algún proceso químico o de calor?",
                 answ: "Respuesta: Alisado o rizado quimicos",
               })
             }
@@ -113,7 +113,7 @@ const SixthQues = () => {
             type="button"
             onClick={() =>
               handleAnswer({
-                ques: "6. ¿Te practicas algún proceso químico o de calor?",
+                ques: "¿Te practicas algún proceso químico o de calor?",
                 answ: "Respuesta: Plancha o secador",
               })
             }
@@ -123,9 +123,9 @@ const SixthQues = () => {
           <button
             type="button"
             onClick={() =>
-              setNoChemicalOption({
-                ques: "6. ¿Te practicas algún proceso químico o de calor?",
-                answ: "Ninguno",
+              handleAnswer({
+                ques: "¿Te practicas algún proceso químico o de calor?",
+                answ: "Respuesta: Ninguno",
               })
             }
           >

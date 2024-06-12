@@ -85,7 +85,7 @@ const SeventhQues = () => {
             type="button"
             onClick={() =>
               handleAnswer({
-                ques: "7. ¿Tienes alguna de estas enfermedades capilares?",
+                ques: "¿Tienes alguna de estas enfermedades capilares?",
                 answ: "Respuesta: Caspa (Dermatitis seborreica)",
               })
             }
@@ -96,7 +96,7 @@ const SeventhQues = () => {
             type="button"
             onClick={() =>
               handleAnswer({
-                ques: "7. ¿Tienes alguna de estas enfermedades capilares?",
+                ques: "¿Tienes alguna de estas enfermedades capilares?",
                 answ: "Respuesta: Hongos (Micosis capilar)",
               })
             }
@@ -107,7 +107,7 @@ const SeventhQues = () => {
             type="button"
             onClick={() =>
               handleAnswer({
-                ques: "7. ¿Tienes alguna de estas enfermedades capilares?",
+                ques: "¿Tienes alguna de estas enfermedades capilares?",
                 answ: "Respuesta: Alopecia (Alopecia areatada)",
               })
             }
@@ -118,7 +118,7 @@ const SeventhQues = () => {
             type="button"
             onClick={() =>
               handleAnswer({
-                ques: "7. ¿Tienes alguna de estas enfermedades capilares?",
+                ques: "¿Tienes alguna de estas enfermedades capilares?",
                 answ: "Respuesta: Ninguno",
               })
             }

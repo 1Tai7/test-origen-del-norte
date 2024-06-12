@@ -76,7 +76,7 @@ const SecondQues = () => {
             type="button"
             onClick={() =>
               handleAnswer({
-                ques: "2.¿Qué tipo de porosidad tiene tus hebras?",
+                ques: "¿Qué tipo de porosidad tiene tus hebras?",
                 answ: "Respuesta: Baja",
               })
             }
@@ -87,7 +87,7 @@ const SecondQues = () => {
             type="button"
             onClick={() =>
               handleAnswer({
-                ques: "2.¿Qué tipo de porosidad tiene tus hebras?",
+                ques: "¿Qué tipo de porosidad tiene tus hebras?",
                 answ: "Respuesta: Media",
               })
             }
@@ -98,7 +98,7 @@ const SecondQues = () => {
             type="button"
             onClick={() =>
               handleAnswer({
-                ques: "2.¿Qué tipo de porosidad tiene tus hebras?",
+                ques: "¿Qué tipo de porosidad tiene tus hebras?",
                 answ: "Respuesta: Alta",
               })
             }

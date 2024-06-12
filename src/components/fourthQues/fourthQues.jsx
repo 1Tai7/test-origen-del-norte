@@ -86,7 +86,7 @@ const FourthQues = () => {
             type="button"
             onClick={() =>
               handleAnswer({
-                ques: "4. ¿En que clima vives?",
+                ques: "¿En que clima vives?",
                 answ: "Respuesta: Frio",
               })
             }
@@ -97,7 +97,7 @@ const FourthQues = () => {
             type="button"
             onClick={() =>
               handleAnswer({
-                ques: "4. ¿En que clima vives?",
+                ques: "¿En que clima vives?",
                 answ: "Respuesta: Tropical",
               })
             }
@@ -108,7 +108,7 @@ const FourthQues = () => {
             type="button"
             onClick={() =>
               handleAnswer({
-                ques: "4. ¿En que clima vives?",
+                ques: "¿En que clima vives?",
                 answ: "Respuesta: Desierto",
               })
             }
@@ -119,7 +119,7 @@ const FourthQues = () => {
             type="button"
             onClick={() =>
               handleAnswer({
-                ques: "4. ¿En que clima vives?",
+                ques: "¿En que clima vives?",
                 answ: "Respuesta: Selva",
               })
             }

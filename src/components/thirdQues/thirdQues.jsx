@@ -60,7 +60,7 @@ const SecondQues = () => {
             type="button"
             onClick={() =>
               handleAnswer({
-                ques: "3. ¿Qué oleosidad tiene tu cabello?",
+                ques: "¿Qué oleosidad tiene tu cabello?",
                 answ: "Respuesta: Graso",
               })
             }
@@ -71,7 +71,7 @@ const SecondQues = () => {
             type="button"
             onClick={() =>
               handleAnswer({
-                ques: "3. ¿Qué oleosidad tiene tu cabello?",
+                ques: "¿Qué oleosidad tiene tu cabello?",
                 answ: "Respuesta: Seco",
               })
             }
@@ -82,7 +82,7 @@ const SecondQues = () => {
             type="button"
             onClick={() =>
               handleAnswer({
-                ques: "3. ¿Qué oleosidad tiene tu cabello?",
+                ques: "¿Qué oleosidad tiene tu cabello?",
                 answ: "Respuesta: Mixto",
               })
             }

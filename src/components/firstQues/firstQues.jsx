@@ -86,7 +86,7 @@ const FirstQues = () => {
             type="button"
             onClick={() =>
               handleAnswer({
-                ques: "1.¿Qué tipo de cabello tienes?",
+                ques: "¿Qué tipo de cabello tienes?",
                 answ: "Respuesta: Liso",
               })
             }
@@ -97,7 +97,7 @@ const FirstQues = () => {
             type="button"
             onClick={() =>
               handleAnswer({
-                ques: "1.¿Qué tipo de cabello tienes?",
+                ques: "¿Qué tipo de cabello tienes?",
                 answ: "Respuesta: Ondulado",
               })
             }
@@ -108,7 +108,7 @@ const FirstQues = () => {
             type="button"
             onClick={() =>
               handleAnswer({
-                ques: "1.¿Qué tipo de cabello tienes?",
+                ques: "¿Qué tipo de cabello tienes?",
                 answ: "Respuesta: Rizado",
               })
             }
@@ -119,7 +119,7 @@ const FirstQues = () => {
             type="button"
             onClick={() =>
               handleAnswer({
-                ques: "1.¿Qué tipo de cabello tienes?",
+                ques: "¿Qué tipo de cabello tienes?",
                 answ: "Respuesta: Afro",
               })
             }
