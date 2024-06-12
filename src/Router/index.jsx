@@ -7,10 +7,15 @@ import FifthQues from "../components/fifthQues/fifthQues";
 import SixthQues from "../components/sixthQues/sixthQues";
 import SeventhQues from "../components/seventhQues/seventhQues";
 import StartTest from "../components/startTest/startTest";
-import DownloadResult from "../components/downloadResult/downloadResult";
 import ResultsTest from "../components/resultsTest/resultsTest";
+import SeeResults from "../components/seeResult/seeResult";
+import WelcomeApp from "../components/welcome/welcome";
 
 export const router = createBrowserRouter([
+  {
+    path: "/welcome",
+    element: <WelcomeApp />,
+  },
   {
     path: "/start-test",
     element: <StartTest />,
@@ -44,8 +49,8 @@ export const router = createBrowserRouter([
     element: <SeventhQues />,
   },
   {
-    path: "/download-result",
-    element: <DownloadResult />,
+    path: "/see-result",
+    element: <SeeResults />,
   },
   {
     path: "/results-test",

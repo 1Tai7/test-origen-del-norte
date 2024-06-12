@@ -1,3 +1,4 @@
+import { useNavigate } from "react-router-dom";
 import QuesAnswer from "./quesAnswer";
 import "./resultsTest.css";
 
@@ -9,6 +10,11 @@ const ResultsTest = () => {
   const dataFive = localStorage.getItem("respuesta 5");
   const dataSix = localStorage.getItem("respuesta 6");
   const dataSeven = localStorage.getItem("respuesta 7");
+
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/hair-tips");
+  };
 
   return (
     <section className="results-container">
@@ -49,7 +55,9 @@ const ResultsTest = () => {
           answer={JSON.parse(dataSeven).answ}
         />
         <div className="tips-button">
-          <button>VER RECOMENDACIONES</button>
+          <button type="button" onClick={() => handleClick()}>
+            VER RECOMENDACIONES
+          </button>
         </div>
       </div>
     </section>

@@ -12,7 +12,6 @@ import ThirdQues from "./components/thirdQues/thirdQues";
 const App = () => {
   return (
     <>
-      <section className="container">
         <StartTest />
         <FirstQues />
         <SecondQues />
@@ -21,7 +20,6 @@ const App = () => {
         <FifthQues />
         <SixthQues />
         <SeventhQues />
-      </section>
     </>
   );
 };
