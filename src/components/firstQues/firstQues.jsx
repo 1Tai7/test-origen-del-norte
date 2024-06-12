@@ -54,85 +54,87 @@ const FirstQues = () => {
   }, [straightOption, wavyOption, curlyOption, afroOption]);
 
   return (
-    <form id="form-one">
-      <div className="title-ques-container">
-        <div className="img">
-          <img src={iconTest} alt="icon-test-hair" />
+    <form id="form">
+      <section className="general-container">
+        <div className="title-ques-container">
+          <div className="img">
+            <img src={iconTest} alt="icon-test-hair" />
+          </div>
+          <h2>1. ¿Qué tipo de cabello tienes?</h2>
         </div>
-        <h2>1. ¿Qué tipo de cabello tienes?</h2>
-      </div>
-      <figure>
-        <div>
-          <h2>1</h2>
-          <img src={hairStraight} alt="img-hair-straight" />
+        <figure>
+          <div>
+            <h2>1</h2>
+            <img src={hairStraight} alt="img-hair-straight" />
+          </div>
+          <div>
+            <h2>2</h2>
+            <img src={hairWavy} alt="img-hair-wavy" />
+          </div>
+          <div>
+            <h2>3</h2>
+            <img src={hairCurly} alt="img-hair-curly" />
+          </div>
+          <div>
+            <h2>4</h2>
+            <img src={hairAfro} alt="img-hair-afro" />
+          </div>
+        </figure>
+        <div className="answer-container">
+          <div className="line"></div>
+          <div className="btn-container">
+            <button
+              type="button"
+              onClick={() =>
+                handleAnswer({
+                  ques: "¿Qué tipo de cabello tienes?",
+                  answ: "Respuesta: Liso",
+                })
+              }
+            >
+              <span>1</span> LISO
+            </button>
+            <button
+              type="button"
+              onClick={() =>
+                handleAnswer({
+                  ques: "¿Qué tipo de cabello tienes?",
+                  answ: "Respuesta: Ondulado",
+                })
+              }
+            >
+              <span>2</span> ONDULADO
+            </button>
+            <button
+              type="button"
+              onClick={() =>
+                handleAnswer({
+                  ques: "¿Qué tipo de cabello tienes?",
+                  answ: "Respuesta: Rizado",
+                })
+              }
+            >
+              <span>3</span> RIZADO
+            </button>
+            <button
+              type="button"
+              onClick={() =>
+                handleAnswer({
+                  ques: "¿Qué tipo de cabello tienes?",
+                  answ: "Respuesta: Afro",
+                })
+              }
+            >
+              <span>4</span> AFRO
+            </button>
+          </div>
+          <div className="next-btn">
+            <button type="button" onClick={() => handleClick()}>
+              SIGUIENTE
+            </button>
+          </div>
         </div>
-        <div>
-          <h2>2</h2>
-          <img src={hairWavy} alt="img-hair-wavy" />
-        </div>
-        <div>
-          <h2>3</h2>
-          <img src={hairCurly} alt="img-hair-curly" />
-        </div>
-        <div>
-          <h2>4</h2>
-          <img src={hairAfro} alt="img-hair-afro" />
-        </div>
-      </figure>
-      <div className="answer-container">
-        <div className="line"></div>
-        <div className="btn-container">
-          <button
-            type="button"
-            onClick={() =>
-              handleAnswer({
-                ques: "¿Qué tipo de cabello tienes?",
-                answ: "Respuesta: Liso",
-              })
-            }
-          >
-            <span>1</span> LISO
-          </button>
-          <button
-            type="button"
-            onClick={() =>
-              handleAnswer({
-                ques: "¿Qué tipo de cabello tienes?",
-                answ: "Respuesta: Ondulado",
-              })
-            }
-          >
-            <span>2</span> ONDULADO
-          </button>
-          <button
-            type="button"
-            onClick={() =>
-              handleAnswer({
-                ques: "¿Qué tipo de cabello tienes?",
-                answ: "Respuesta: Rizado",
-              })
-            }
-          >
-            <span>3</span> RIZADO
-          </button>
-          <button
-            type="button"
-            onClick={() =>
-              handleAnswer({
-                ques: "¿Qué tipo de cabello tienes?",
-                answ: "Respuesta: Afro",
-              })
-            }
-          >
-            <span>4</span> AFRO
-          </button>
-        </div>
-        <div className="next-btn">
-          <button type="button" onClick={() => handleClick()}>
-            SIGUIENTE
-          </button>
-        </div>
-      </div>
+      </section>
     </form>
   );
 };

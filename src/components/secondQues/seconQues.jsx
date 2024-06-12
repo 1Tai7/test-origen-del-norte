@@ -46,72 +46,74 @@ const SecondQues = () => {
   }, [lowStrandOption, halfStrandOption, highStrandOption]);
 
   return (
-    <form id="form-one">
-      <div className="title-ques-container">
-        <div className="img">
-          <img src={iconTest} alt="icon-test-hair" />
+    <form id="form">
+      <section className="general-container">
+        <div className="title-ques-container">
+          <div className="img">
+            <img src={iconTest} alt="icon-test-hair" />
+          </div>
+          <h2 className="ques-two">
+            2. ¿Qué tipo de porosidad tiene tus hebras?
+          </h2>
         </div>
-        <h2 className="ques-two">
-          2. ¿Qué tipo de porosidad tiene tus hebras?
-        </h2>
-      </div>
-      <figure>
-        <div>
-          <h2>1</h2>
-          <img src={lowStrand} alt="img-low-strand" />
+        <figure>
+          <div>
+            <h2>1</h2>
+            <img src={lowStrand} alt="img-low-strand" />
+          </div>
+          <div>
+            <h2>2</h2>
+            <img src={halfStrand} alt="img-half-strand" />
+          </div>
+          <div>
+            <h2>3</h2>
+            <img src={highStrand} alt="img-high-strand" />
+          </div>
+        </figure>
+        <div className="answer-container">
+          <div className="line"></div>
+          <div className="btn-container">
+            <button
+              type="button"
+              onClick={() =>
+                handleAnswer({
+                  ques: "¿Qué tipo de porosidad tiene tus hebras?",
+                  answ: "Respuesta: Baja",
+                })
+              }
+            >
+              <span>1</span> BAJA
+            </button>
+            <button
+              type="button"
+              onClick={() =>
+                handleAnswer({
+                  ques: "¿Qué tipo de porosidad tiene tus hebras?",
+                  answ: "Respuesta: Media",
+                })
+              }
+            >
+              <span>2</span> MEDIA
+            </button>
+            <button
+              type="button"
+              onClick={() =>
+                handleAnswer({
+                  ques: "¿Qué tipo de porosidad tiene tus hebras?",
+                  answ: "Respuesta: Alta",
+                })
+              }
+            >
+              <span>3</span> ALTA
+            </button>
+          </div>
+          <div className="next-btn">
+            <button type="button" onClick={() => handleClick()}>
+              SIGUIENTE
+            </button>
+          </div>
         </div>
-        <div>
-          <h2>2</h2>
-          <img src={halfStrand} alt="img-half-strand" />
-        </div>
-        <div>
-          <h2>3</h2>
-          <img src={highStrand} alt="img-high-strand" />
-        </div>
-      </figure>
-      <div className="answer-container">
-        <div className="line"></div>
-        <div className="btn-container">
-          <button
-            type="button"
-            onClick={() =>
-              handleAnswer({
-                ques: "¿Qué tipo de porosidad tiene tus hebras?",
-                answ: "Respuesta: Baja",
-              })
-            }
-          >
-            <span>1</span> BAJA
-          </button>
-          <button
-            type="button"
-            onClick={() =>
-              handleAnswer({
-                ques: "¿Qué tipo de porosidad tiene tus hebras?",
-                answ: "Respuesta: Media",
-              })
-            }
-          >
-            <span>2</span> MEDIA
-          </button>
-          <button
-            type="button"
-            onClick={() =>
-              handleAnswer({
-                ques: "¿Qué tipo de porosidad tiene tus hebras?",
-                answ: "Respuesta: Alta",
-              })
-            }
-          >
-            <span>3</span> ALTA
-          </button>
-        </div>
-        <div className="next-btn">
-          <button type="button" onClick={() => handleClick()}>
-            SIGUIENTE
-          </button>
-        </div>
-      </div>
+      </section>
     </form>
   );
 };

@@ -54,85 +54,87 @@ const FourthQues = () => {
   }, [coldOption, tropicalOption, desertOption, jungleOption]);
 
   return (
-    <form id="form-one">
-      <div className="title-ques-container">
-        <div className="img">
-          <img src={iconTest} alt="icon-test-hair" />
+    <form id="form">
+      <section className="general-container">
+        <div className="title-ques-container">
+          <div className="img">
+            <img src={iconTest} alt="icon-test-hair" />
+          </div>
+          <h2>4. ¿En que clima vives?</h2>
         </div>
-        <h2>4. ¿En que clima vives?</h2>
-      </div>
-      <figure>
-        <div>
-          <h2>1</h2>
-          <img src={coldWeather} alt="img-cold-weather" />
+        <figure>
+          <div>
+            <h2>1</h2>
+            <img src={coldWeather} alt="img-cold-weather" />
+          </div>
+          <div>
+            <h2>2</h2>
+            <img src={tropicalWeather} alt="img-tropical-weather" />
+          </div>
+          <div>
+            <h2>3</h2>
+            <img src={desertWeather} alt="img-desert-weather" />
+          </div>
+          <div>
+            <h2>4</h2>
+            <img src={jungleWeather} alt="img-jungle-weather" />
+          </div>
+        </figure>
+        <div className="answer-container">
+          <div className="line"></div>
+          <div className="btn-container">
+            <button
+              type="button"
+              onClick={() =>
+                handleAnswer({
+                  ques: "¿En que clima vives?",
+                  answ: "Respuesta: Frio",
+                })
+              }
+            >
+              <span>1</span> FRIO
+            </button>
+            <button
+              type="button"
+              onClick={() =>
+                handleAnswer({
+                  ques: "¿En que clima vives?",
+                  answ: "Respuesta: Tropical",
+                })
+              }
+            >
+              <span>2</span> TROPICAL
+            </button>
+            <button
+              type="button"
+              onClick={() =>
+                handleAnswer({
+                  ques: "¿En que clima vives?",
+                  answ: "Respuesta: Desierto",
+                })
+              }
+            >
+              <span>3</span> DESIERTO
+            </button>
+            <button
+              type="button"
+              onClick={() =>
+                handleAnswer({
+                  ques: "¿En que clima vives?",
+                  answ: "Respuesta: Selva",
+                })
+              }
+            >
+              <span>4</span> SELVA
+            </button>
+          </div>
+          <div className="next-btn">
+            <button type="button" onClick={() => handleClick()}>
+              SIGUIENTE
+            </button>
+          </div>
         </div>
-        <div>
-          <h2>2</h2>
-          <img src={tropicalWeather} alt="img-tropical-weather" />
-        </div>
-        <div>
-          <h2>3</h2>
-          <img src={desertWeather} alt="img-desert-weather" />
-        </div>
-        <div>
-          <h2>4</h2>
-          <img src={jungleWeather} alt="img-jungle-weather" />
-        </div>
-      </figure>
-      <div className="answer-container">
-        <div className="line"></div>
-        <div className="btn-container">
-          <button
-            type="button"
-            onClick={() =>
-              handleAnswer({
-                ques: "¿En que clima vives?",
-                answ: "Respuesta: Frio",
-              })
-            }
-          >
-            <span>1</span> FRIO
-          </button>
-          <button
-            type="button"
-            onClick={() =>
-              handleAnswer({
-                ques: "¿En que clima vives?",
-                answ: "Respuesta: Tropical",
-              })
-            }
-          >
-            <span>2</span> TROPICAL
-          </button>
-          <button
-            type="button"
-            onClick={() =>
-              handleAnswer({
-                ques: "¿En que clima vives?",
-                answ: "Respuesta: Desierto",
-              })
-            }
-          >
-            <span>3</span> DESIERTO
-          </button>
-          <button
-            type="button"
-            onClick={() =>
-              handleAnswer({
-                ques: "¿En que clima vives?",
-                answ: "Respuesta: Selva",
-              })
-            }
-          >
-            <span>4</span> SELVA
-          </button>
-        </div>
-        <div className="next-btn">
-          <button type="button" onClick={() => handleClick()}>
-            SIGUIENTE
-          </button>
-        </div>
-      </div>
+      </section>
     </form>
   );
 };

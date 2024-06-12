@@ -42,8 +42,8 @@ const FifthQues = () => {
   }, [gymOption, anySportOption, walkOption]);
 
   return (
-    <form id="form-one">
-      <section>
+    <form id="form">
+      <section className="general-container">
         <div className="title-ques-container">
           <div className="img">
             <img src={iconTest} alt="icon-test-hair" />

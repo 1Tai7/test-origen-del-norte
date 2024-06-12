@@ -40,62 +40,64 @@ const SecondQues = () => {
   }, [greasyOption, dryOption, mixedOption]);
 
   return (
-    <form id="form-one">
-      <div className="title-ques-container">
-        <div className="img">
-          <img src={iconTest} alt="icon-test-hair" />
-        </div>
+    <form id="form">
+      <section className="general-container">
+        <div className="title-ques-container">
+          <div className="img">
+            <img src={iconTest} alt="icon-test-hair" />
+          </div>
 
-        <h2>3. ¿Qué oleosidad tiene tu cabello?</h2>
-      </div>
-      <figure>
-        <div>
-          <img src={oiliness} alt="img-oiliness" />
+          <h2>3. ¿Qué oleosidad tiene tu cabello?</h2>
         </div>
-      </figure>
-      <div className="answer-container">
-        <div className="line"></div>
-        <div className="btn-container">
-          <button
-            type="button"
-            onClick={() =>
-              handleAnswer({
-                ques: "¿Qué oleosidad tiene tu cabello?",
-                answ: "Respuesta: Graso",
-              })
-            }
-          >
-            <span>1</span> GRASO
-          </button>
-          <button
-            type="button"
-            onClick={() =>
-              handleAnswer({
-                ques: "¿Qué oleosidad tiene tu cabello?",
-                answ: "Respuesta: Seco",
-              })
-            }
-          >
-            <span>2</span> SECO
-          </button>
-          <button
-            type="button"
-            onClick={() =>
-              handleAnswer({
-                ques: "¿Qué oleosidad tiene tu cabello?",
-                answ: "Respuesta: Mixto",
-              })
-            }
-          >
-            <span>3</span> MIXTO
-          </button>
+        <figure>
+          <div>
+            <img src={oiliness} alt="img-oiliness" />
+          </div>
+        </figure>
+        <div className="answer-container">
+          <div className="line"></div>
+          <div className="btn-container">
+            <button
+              type="button"
+              onClick={() =>
+                handleAnswer({
+                  ques: "¿Qué oleosidad tiene tu cabello?",
+                  answ: "Respuesta: Graso",
+                })
+              }
+            >
+              <span>1</span> GRASO
+            </button>
+            <button
+              type="button"
+              onClick={() =>
+                handleAnswer({
+                  ques: "¿Qué oleosidad tiene tu cabello?",
+                  answ: "Respuesta: Seco",
+                })
+              }
+            >
+              <span>2</span> SECO
+            </button>
+            <button
+              type="button"
+              onClick={() =>
+                handleAnswer({
+                  ques: "¿Qué oleosidad tiene tu cabello?",
+                  answ: "Respuesta: Mixto",
+                })
+              }
+            >
+              <span>3</span> MIXTO
+            </button>
+          </div>
+          <div className="next-btn">
+            <button type="button" onClick={() => handleClick()}>
+              SIGUIENTE
+            </button>
+          </div>
         </div>
-        <div className="next-btn">
-          <button type="button" onClick={() => handleClick()}>
-            SIGUIENTE
-          </button>
-        </div>
-      </div>
+      </section>
     </form>
   );
 };
