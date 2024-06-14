@@ -11,15 +11,20 @@ import ResultsTest from "../components/resultsTest/resultsTest";
 import SeeResults from "../components/seeResult/seeResult";
 import WelcomeApp from "../components/welcome/welcome";
 import Login from "../components/login/login";
+import Home from "../components/home/home";
 
 export const router = createBrowserRouter([
   {
-    path: "/welcome",
+    path: "/",
     element: <WelcomeApp />,
   },
   {
     path: "/login",
     element: <Login />,
+  },
+  {
+    path: "/home",
+    element: <Home />,
   },
   {
     path: "/start-test",
