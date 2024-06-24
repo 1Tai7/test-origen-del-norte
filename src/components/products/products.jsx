@@ -12,18 +12,20 @@ const Products = () => {
           <img src={logoOrigen} alt="logo-origen" />
         </div>
         <div className="products">
-          <div>
-            <figure className="mustard-ctn"></figure>
+          <div className="shampoo-and-conditioner">
             <div>
-              <img src={shampoo} alt="shampoo" />
-              <h3>SHAMPOO DURAZNO</h3>
+              <figure className="mustard-ctn"></figure>
+              <div>
+                <img src={shampoo} alt="shampoo" />
+                <h3>SHAMPOO DURAZNO</h3>
+              </div>
             </div>
-          </div>
-          <div>
-            <figure className="mustard-ctn"></figure>
             <div>
-              <img src={conditioner} alt="conditioner" />
-              <h3>ACONDICIONADOR DURAZNO</h3>
+              <figure className="mustard-ctn"></figure>
+              <div>
+                <img src={conditioner} alt="conditioner" />
+                <h3>ACONDICIONADOR DURAZNO</h3>
+              </div>
             </div>
           </div>
           <div>
