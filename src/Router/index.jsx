@@ -12,6 +12,7 @@ import SeeResults from "../components/seeResult/seeResult";
 import WelcomeApp from "../components/welcome/welcome";
 import Login from "../components/login/login";
 import Home from "../components/home/home";
+import Products from "../components/products/products";
 
 export const router = createBrowserRouter([
   {
@@ -65,5 +66,9 @@ export const router = createBrowserRouter([
   {
     path: "/results-test",
     element: <ResultsTest />,
+  },
+  {
+    path: "/products",
+    element: <Products />,
   },
 ]);

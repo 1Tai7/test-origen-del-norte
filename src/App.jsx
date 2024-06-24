@@ -8,6 +8,7 @@ import SeventhQues from "./components/seventhQues/seventhQues";
 import SixthQues from "./components/sixthQues/sixthQues";
 import StartTest from "./components/startForm/startTest";
 import ThirdQues from "./components/thirdQues/thirdQues";
+import NavBar from "./components/navBar/navBar";
 
 const App = () => {
   return (
@@ -20,6 +21,7 @@ const App = () => {
         <FifthQues />
         <SixthQues />
         <SeventhQues />
+        <NavBar/>
     </>
   );
 };

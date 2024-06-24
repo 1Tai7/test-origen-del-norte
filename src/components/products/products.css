@@ -1,0 +1,59 @@
+.products-container {
+  background-color: var(--mustard);
+  height: 100vh;
+  position: relative;
+  background-image: url("./../../assets/malla-negra.svg");
+  background-size: contain;
+}
+.products-container main {
+  background-color: var(--light-white);
+  position: relative;
+  bottom: 0;
+  top: 8rem;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  border-radius: 100px 100px 0 0;
+}
+.logo-ctn {
+  box-shadow: 0px 4px 11px -1px rgba(0, 0, 0, 0.6);
+  background-color: var(--mustard);
+  border-radius: 100px;
+  padding: 0.7rem;
+  position: relative;
+  top: -4rem;
+}
+.logo-ctn img {
+  width: 8rem;
+  height: 8rem;
+}
+.products {
+  display: flex;
+  flex-wrap: wrap;
+  width: 85%;
+  color: var(--white);
+  justify-content: center;
+  gap: 1.5rem;
+}
+.products div {
+  display: flex;
+  flex-direction: column;
+  text-align: center;
+  align-items: center;
+  justify-content: center;
+  width: 10rem;
+  height: 21rem;
+  position: relative;
+  top: -5rem;
+  z-index: 2;
+}
+.mustard-ctn {
+  background-color: var(--mustard);
+  width: 9rem;
+  height: 12rem;
+  top: 1rem;
+  position: absolute;
+  border-radius: 4rem;
+  align-items: center;
+}

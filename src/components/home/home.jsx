@@ -8,6 +8,7 @@ import imgTips from "./../../assets/tips-categoria.svg";
 import iconProfessionals from "./../../assets/icon-profesionales.svg";
 import imgProfessionals from "./../../assets/profesionales-categoria.svg";
 import CategoriesCtn from "./categoriesCtn";
+import NavBar from "../navBar/navBar";
 
 const Home = () => {
   return (
@@ -72,7 +73,7 @@ const Home = () => {
           />
         </div>
       </main>
-      
+      <NavBar />
     </section>
   );
 };
