@@ -1,5 +1,6 @@
 //import { useState } from 'react'
 import "./ques.css";
+import "./individualHairProducts.css"
 import FifthQues from "./components/fifthQues/fifthQues";
 import FirstQues from "./components/firstQues/firstQues";
 import FourthQues from "./components/fourthQues/fourthQues";

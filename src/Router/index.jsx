@@ -13,6 +13,7 @@ import WelcomeApp from "../components/welcome/welcome";
 import Login from "../components/login/login";
 import Home from "../components/home/home";
 import Products from "../components/products/products";
+import Shampoo from "../components/shampoo/shampoo";
 
 export const router = createBrowserRouter([
   {
@@ -71,4 +72,16 @@ export const router = createBrowserRouter([
     path: "/products",
     element: <Products />,
   },
+  {
+    path: "/shampoo",
+    element: <Shampoo />,
+  },
+  // {
+  //   path: "/conditioner",
+  //   element: <Conditioner />,
+  // },
+  // {
+  //   path: "/hair-cream",
+  //   element: <HairCream />,
+  // },
 ]);

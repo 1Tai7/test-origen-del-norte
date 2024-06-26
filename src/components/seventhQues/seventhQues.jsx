@@ -16,7 +16,7 @@ const SeventhQues = () => {
 
   const navigate = useNavigate();
   const handleClick = () => {
-    navigate("/download-result");
+    navigate("/see-result");
   };
   const handleAnswer = ({ ques, answ }) => {
     setDandruffOption({
