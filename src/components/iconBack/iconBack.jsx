@@ -1,7 +1,14 @@
-import "./iconBack.css"
+import "./iconBack.css";
+import { useNavigate } from "react-router-dom";
+
 const IconBack = () => {
+  const navigate = useNavigate();
+  const handleClick = () => {
+    navigate("/products");
+  };
+
   return (
-    <div className="icon-back">
+    <div type="button" onClick={() => handleClick()} className="icon-back">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="icon icon-tabler icon-tabler-circle-arrow-left"

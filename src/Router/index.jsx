@@ -16,6 +16,8 @@ import Products from "../components/products/products";
 import Shampoo from "../components/shampoo/shampoo";
 import Conditioner from "../components/conditioner/conditiones";
 import HairCream from "../components/hairCream/hairCream";
+import Tips from "../components/tipsAndProfessionals/tips";
+import Professionals from "../components/tipsAndProfessionals/professionals";
 
 export const router = createBrowserRouter([
   {
@@ -85,5 +87,13 @@ export const router = createBrowserRouter([
   {
     path: "/hair-cream",
     element: <HairCream />,
+  },
+  {
+    path: "/tips",
+    element: <Tips />,
+  },
+  {
+    path: "/professionals",
+    element: <Professionals />,
   },
 ]);

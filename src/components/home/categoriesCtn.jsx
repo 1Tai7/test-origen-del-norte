@@ -7,6 +7,7 @@ const CategoriesCtn = ({
   nameCategories,
   imgCategories,
   altImgCategories,
+  onClick
 }) => {
   return (
     <div>
@@ -18,7 +19,7 @@ const CategoriesCtn = ({
         <h3>{nameCategories}</h3>
         <img src={imgCategories} alt={altImgCategories} />
         <div>
-          <button>Entrar</button>
+          <button onClick={onClick}>Entrar</button>
         </div>
       </div>
     </div>

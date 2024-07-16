@@ -1,4 +1,6 @@
 import "./home.css";
+import { useNavigate } from "react-router-dom";
+
 import iconTest from "./../../assets/icon-pelo-test.svg";
 import imgHairTest from "./../../assets/pelo-test-categoria.svg";
 import iconProducts from "./../../assets/icon-productos.svg";
@@ -11,6 +13,19 @@ import CategoriesCtn from "./categoriesCtn";
 import NavBar from "../navBar/navBar";
 
 const Home = () => {
+  const navigate = useNavigate();
+  const handleClickTest = () => {
+    navigate("/start-test");
+  };
+  const handleClickProducts = () => {
+    navigate("/products");
+  };
+  const handleClickTips = () => {
+    navigate("/tips");
+  };
+  const handleClickProfessionals = () => {
+    navigate("/professionals");
+  };
   return (
     <section className="home-container">
       <div className="hair-model"></div>
@@ -46,6 +61,7 @@ const Home = () => {
             nameCategories="PELO/TEST"
             imgCategories={imgHairTest}
             altImgCategories="img-hair-test"
+            onClick={handleClickTest}
           />
           <CategoriesCtn
             iconCategories={iconProducts}
@@ -54,6 +70,7 @@ const Home = () => {
             nameCategories="PRODUCTOS"
             imgCategories={imgProducts}
             altImgCategories="img-products"
+            onClick={handleClickProducts}
           />
           <CategoriesCtn
             iconCategories={iconTips}
@@ -62,6 +79,7 @@ const Home = () => {
             nameCategories="TIPS"
             imgCategories={imgTips}
             altImgCategories="img-tips"
+            onClick={handleClickTips}
           />
           <CategoriesCtn
             iconCategories={iconProfessionals}
@@ -70,6 +88,7 @@ const Home = () => {
             nameCategories="PROFESIONALES"
             imgCategories={imgProfessionals}
             altImgCategories="img-professionals"
+            onClick={handleClickProfessionals}
           />
         </div>
       </main>
