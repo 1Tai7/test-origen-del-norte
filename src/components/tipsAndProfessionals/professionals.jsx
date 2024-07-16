@@ -1,17 +1,19 @@
 import "./tipsAndProfessionals.css";
 import logoOrigen from "./../../assets/logo-origen.svg";
 import professionals from "./../../assets/profesional.svg";
+import IconHome from "../iconHome/iconHome";
 
 const Professionals = () => {
   return (
     <section className="professionals-container">
+      <IconHome />
       <main>
         <div className="logo-orange">
           <img src={logoOrigen} alt="logo-origen" />
         </div>
         <div className="professional-content-ctn">
           <h3>PROFESIONALES</h3>
-          <div className="img-tip-ctn">
+          <div className="img-professional-ctn">
             <img src={professionals} alt="professionals-img" />
             <div className="professionals-text-ctn">
               <div>

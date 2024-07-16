@@ -24,7 +24,9 @@
   width: 7rem;
   height: 7rem;
   position: relative;
-  top: -5rem;
+  top: -4rem;
+    box-shadow: 0px 4px 11px -1px rgba(0, 0, 0, 0.6);
+
 }
 .start-test-container .logo-hair-test {
   position: relative;

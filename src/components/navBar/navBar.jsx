@@ -3,7 +3,7 @@ import "./navBar.css"
 const NavBar = () =>{
 return (
   <section className="nav-bar-container">
-    <div className="icon-home">
+    <div className="icon-home-nav-bar">
       <svg
         xmlns="http://www.w3.org/2000/svg"
         className="icon icon-tabler icon-tabler-home"

@@ -5,6 +5,7 @@ import shampoo from "./../../assets/Shampoo.svg";
 import conditioner from "./../../assets/Acondicionador.svg";
 import cream from "./../../assets/Crema-de-peinar.svg";
 import logoOrigen from "./../../assets/logo-origen.svg";
+import IconHome from "../iconHome/iconHome";
 
 const Products = () => {
   const navigate = useNavigate();
@@ -19,6 +20,7 @@ const Products = () => {
   };
   return (
     <section className="products-container">
+      <IconHome/>
       <main>
         <div className="logo-ctn">
           <img src={logoOrigen} alt="logo-origen" />
